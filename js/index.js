@@ -247,6 +247,169 @@ function getDiscount(totalSpent) {
 
 // 25/36
 
+function checkStorage(available, ordered) {
+  let message;
+  // Change code below this line
+  message = ordered > available ? "Not enough goods in stock!" :
+"The order is accepted, our manager will contact you";
+
+
+  // Change code above this line
+  return message;
+}
+
+// 26/36
+
+function checkPassword(password) {
+  const ADMIN_PASSWORD = "jqueryismyjam";
+  let message;
+  // Change code below this line
+message = password === ADMIN_PASSWORD ? "Access is allowed" : "Access denied, wrong password!";
+  // Change code above this line
+  return message;
+}
+
+
+// 27/36
+
+function getSubscriptionPrice(type) {
+  let price;
+  // Change code below this line
+
+ switch (type) { // Change this line
+    case 'starter': // Change this line
+      price = 0; // Change this line
+      break;
+
+    case 'professional': // Change this line
+      price = 20; // Change this line
+      break;
+
+    case 'organization': // Change this line
+      price = 50; // Change this line
+      break;
+  }
+
+  // Change code above this line
+  return price;
+}
+
+// 28/36
+
+function checkPassword(password) {
+  const ADMIN_PASSWORD = "jqueryismyjam";
+  let message;
+  // Change code below this line
+switch (password) { // Change this line
+    case null: // Change this line
+      message = "Canceled by user!"; // Change this line
+      break;
+
+    case ADMIN_PASSWORD: // Change this line
+      message = "Welcome!"; // Change this line
+      break;
+
+    default: // Change this line
+      message = "Access denied, wrong password!"
+  }
+ 
+
+  // Change code above this line
+  return message;
+}
+
+// 29/36
+
+function getShippingCost(country) {
+  let message;
+  // Change code below this line
+switch (country) {
+case 'China' :
+message = 'Shipping to China will cost 100 credits';
+price = 100;
+break;
+case 'Chile' :
+message = 'Shipping to Chile will cost 250 credits';
+price = 250;
+break;
+case 'Australia' :
+message = 'Shipping to Australia will cost 170 credits';
+price = 170;
+break;
+case 'Jamaica' :
+message = 'Shipping to Jamaica will cost 120 credits';
+price = 120;
+break;
+  default:
+message = "Sorry, there is no delivery to your country";
+}
+  // Change code above this line
+  return message;
+}
+
+// 30/36
+
+function getNameLength(name) {
+  const message = `Name ${name} is ${name.length} characters long`; // Change this line
+
+  return message;
+}
+
+// 31/36
+
+const courseTopic = "JavaScript essentials";
+// Change code below this line
+
+const courseTopicLength = courseTopic.length;
+const firstElement = courseTopic[0];
+const lastElement = courseTopic[courseTopic.length - 1];
+// Change code above this line
+
+// 32/36
+
+function getSubstring(string, length) {
+  const substring = string.slice(0, length); // Change this line
+
+  return substring;
+}
+
+// 33/36
+
+function formatMessage(message, maxLength) {
+  let result;
+  // Change code below this line
+if(message.length <= maxLength) {
+  result = message;
+} else {
+result = message.slice(0, maxLength) + ('...')
+}
+  /// Change code above this line
+  return result;
+}
+
+// 34/36
+
+function normalizeInput(input) {
+  const normalizedInput = input.toLowerCase(); // Change this line
+
+  return normalizedInput;
+}
+
+// 35/36
+
+function checkForName(fullName, name) {
+  const result = fullName.includes(name); // Change this line
+   return result;
+ }
+
+//  36/36
+
+function checkForSpam(message) {
+  let result;
+result = message.toLowerCase().includes('spam') || message.toLowerCase().includes('sale');
+  // Change code above this line
+  return result;
+}
 
 
 

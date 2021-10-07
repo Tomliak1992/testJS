@@ -132,3 +132,46 @@ const a = firstArray.concat(secondArray);
 return a
     
   }
+
+// 17/32
+
+const start = 3;
+const end = 7;
+
+for (let i = start; i <=end ; i +=1) { 
+  console.log(i);
+}
+
+//  18/32
+
+function calculateTotal(number) {
+
+  let sum = 0;
+for (let i = 0; i <= number; i += 1) { 
+  sum += i;
+}
+return sum;
+}
+
+// 19/32
+
+const fruits = ['apple', 'plum', 'pear', 'orange'];
+
+for (let i = 0; i < fruits.length; i += 1) { // Change this line
+  const fruit = fruits[i]; // Change this line
+  console.log(fruit);
+}
+
+// 20/32
+
+function calculateTotalPrice(order) {
+  let total = 0;
+  // Change code below this line
+for (let i = 0; i <= order.length - 1; i += 1) {
+  total += order[i]
+}
+  return total;
+}
+
+// 21/32
+
